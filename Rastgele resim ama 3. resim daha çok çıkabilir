@@ -22,7 +22,7 @@ async def heh(ctx, count_heh = 5):
 async def komikfoto(ctx):
     komikfotolar = ['komik1.jpg', 'komik2.jpg', 'komik3.jpg', 'komik3.jpg']
 
-    secilen_resim = random.choice(liste)
+    secilen_resim = random.choice(komikfotolar)
     with open(f"komikfotolar/{secilen_resim}", 'rb') as resim:
     gorsel = discord.file(resim)
     await ctx. send(file=gorsel)
