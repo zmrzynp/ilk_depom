@@ -1,0 +1,60 @@
+import discord
+from discord.ext import commands
+import random
+import os
+intents = discord.Intents.default()
+intents.message_content = True
+
+bot = commands.Bot(command_prefix='$', intents=intents)
+
+@bot.event
+async def on_ready():
+    print(f'{bot.user} olarak giriş yaptık')
+
+@bot.command()
+async def hello(ctx):
+    await ctx.send(f'Merhaba! Ben {bot.user}, bir Discord sohbet botuyum!')
+
+@bot.command()
+async def heh(ctx, count_heh = 5):
+    await ctx.send("he" * count_heh)
+
+@bot.command()
+async def komikfoto(ctx):
+    komikfotolar = ['komik1.jpg', 'komik2.jpg', 'komik3.jpg', 'komik3.jpg']
+
+    secilen_resim = random.choice(liste)
+    with open(f"komikfotolar/{secilen_resim}", 'rb') as resim:
+        gorsel = discord.file(resim)
+    await ctx. send(file=gorsel)
+
+
+
+MoRa = "MoRA (Museum of Recycled Art---------- Sanat Eserleri: MoRA'da sergilenen sanat eserleri, tamamen geri dönüştürülmüş malzemelerden yapılmıştır. Bu eserler, atıkların nasıl sanat eserlerine dönüştürülebileceğine dair ilham verici örnekler sunar. Eğitim ve Farkındalık: Müze, ziyaretçilerine geri dönüşümün önemini ve atıkların nasıl yeniden değerlendirilebileceğini öğretmeyi amaçlayan eğitim programları ve atölyeler düzenler. Çevre Dostu Yaklaşım: MoRA, çevre dostu uygulamaları teşvik ederek, sürdürülebilir yaşam tarzlarını benimsemeye yönelik farkındalık yaratır.""
+
+Exp = "The Exploratorium----------Eğitim ve Bilim: The Exploratorium, farklı yaş gruplarına hitap eden geniş bir yelpazede bilimsel sergiler ve etkinlikler sunar. Ziyaretçiler, çeşitli bilim dallarını kapsayan yüzlerce interaktif sergi aracılığıyla öğrenme fırsatı bulur. Interaktif Sergiler: Müze, özellikle dokunulabilir ve deney yapılabilir sergileri ile ünlüdür. Bu sergiler, ziyaretçilerin bilimi bizzat deneyimlemelerini ve keşfetmelerini sağlar. Çevre ve Sürdürülebilirlik: The Exploratorium, sürdürülebilirlik konusuna büyük önem verir ve geri dönüşüm malzemeleri kullanılarak yapılan sergileri ile dikkat çeker. Müzenin Pier 15'teki yeni binası, enerji verimliliği ve çevre dostu tasarımı ile LEED Platinum sertifikasına sahiptir. Sanat ve Teknoloji: Bilimsel keşiflerin yanı sıra, müze sanat ve teknolojiyi de bir araya getirir. Ziyaretçiler, hem sanatsal hem de teknolojik sergiler aracılığıyla yaratıcı düşünme ve problem çözme becerilerini geliştirebilirler. Topluluk Programları: The Exploratorium, eğitimciler, öğrenciler ve aileler için çeşitli programlar ve atölyeler düzenler. Bu programlar, STEM (Bilim, Teknoloji, Mühendislik ve Matematik) alanlarına olan ilgiyi artırmayı amaçlar."
+
+Tom = "The Museum of Tomorrow (Museu do Amanhã)---------- Rio de Janeiro, Brezilyada bulunan ve 2015 yılında açılan modern ve interaktif bir bilim müzesidir. Müze, sürdürülebilirlik ve çevresel konulara odaklanarak, ziyaretçilerine gelecekle ilgili bilinçli ve sorumlu bir bakış açısı kazandırmayı amaçlar. zellikleri ve İçerikleri: Mimari Tasarım: Santiago Calatrava tarafından tasarlanan müze binası, yenilikçi ve sürdürülebilir mimarisi ile dikkat çeker. Müze, hareketli güneş panelleri ve Guanabara Körfezinden su kullanan bir iklimlendirme sistemi gibi çevre dostu teknolojilerle donatılmıştır. Sergiler: Müzenin içeriği, bilimsel araştırmalar ve çevresel verilere dayanan interaktif sergilerden oluşur. Bu sergiler, iklim değişikliği, biyolojik çeşitlilik, sürdürülebilirlik ve sosyal dinamikler gibi konuları ele alır. Ziyaretçi Deneyimi: Müze, ziyaretçilerine sanal gerçeklik ve artırılmış gerçeklik teknolojileri kullanarak interaktif ve eğitici deneyimler sunar. Ziyaretçiler, küresel çevresel sorunları anlamak ve gelecekteki olası senaryoları keşfetmek için farklı tematik alanlarda gezinirler. Eğitim ve Bilinçlendirme: The Museum of Tomorrow, bilimsel ve çevresel bilinçlendirmeyi artırmayı amaçlayan eğitim programları ve etkinlikler düzenler. Bu programlar, hem çocuklar hem de yetişkinler için tasarlanmıştır. Sürdürülebilirlik Vurgusu: Müze, sürdürülebilir bir geleceğin nasıl inşa edilebileceğine dair umut verici mesajlar sunar. Ziyaretçiler, kişisel ve kolektif eylemlerinin gezegen üzerindeki etkilerini öğrenirler."
+
+Ningbo = "Ningbo History Museum---------- Çin'in Ningbo şehrinde bulunan ve şehrin tarihini ve kültürünü sergileyen bir müzedir. 2008 yılında açılan bu müze, ünlü Çinli mimar Wang Shu tarafından tasarlanmıştır ve modern mimarisi ile dikkat çekmektedir.Özellikleri ve İçerikleri Mimari Tasarım: Ningbo History Museum'un tasarımı, mimar Wang Shu'nun geleneksel Çin mimarisi ile modern unsurları harmanlama yeteneğini yansıtır. Müzenin yapımında, yerel inşaat atıklarından elde edilen geri dönüştürülmüş malzemeler kullanılmıştır. Bu yaklaşım, müzenin çevre dostu ve sürdürülebilir bir yapı olmasını sağlamıştır. Sergiler: Müze, Ningbo'nun zengin tarihini ve kültürünü keşfetmek için geniş bir yelpazede sergiler sunar. Ziyaretçiler, antik çağlardan modern döneme kadar şehrin tarihi hakkında bilgi edinebilirler. Sergiler, arkeolojik buluntular, tarihi belgeler, sanat eserleri ve kültürel objelerden oluşur. Tematik Alanlar: Müze, çeşitli tematik alanlar ile ziyaretçilerine kapsamlı bir deneyim sunar. Bu alanlar, Ningbo'nun ticaret geçmişi, denizcilik tarihi, kültürel mirası ve yerel yaşam tarzlarını ele alır. Eğitim ve Etkinlikler: Ningbo History Museum, eğitim programları ve atölyeler düzenleyerek ziyaretçilere interaktif öğrenme fırsatları sunar. Bu programlar, çocuklardan yetişkinlere kadar geniş bir yaş grubuna hitap eder. Kültürel Etkinlikler: Müze, yerel ve uluslararası kültürel etkinliklere ev sahipliği yapar. Sergi açılışları, sanat performansları ve konferanslar gibi etkinlikler, müzenin dinamik ve canlı bir kültürel merkez olmasını sağlar."
+
+muzelerin_aciklamasi = [MoRa, Exp, Tom, Ningbo]
+
+
+@bot.command()
+async def bana_bir_müze_öner(ctx):
+    secilen_muze = random.choice(muzelerin_aciklamasi)
+    gorsel_list = os.listdir("img")
+    for gorsel in gorsel_list:
+        if f"{secilen_muze}.jpeg" == gorsel:
+            with open(f"img/{gorsel}", 'rb') as resim:
+                picture = discord.file(resim)
+            await ctx.send(file=picture)
+
+    await ctx.send(secilen_muze)
+
+
+  
+
+
+bot.run("GİZLİ TOKEN BURAYA")
