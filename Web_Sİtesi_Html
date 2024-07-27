@@ -1,0 +1,65 @@
+<!--Teknoloji Bağımlılığı-->
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teknoloji Bağımlılığı</title>
+</head>
+<body>
+    <h1>Teknoloji Bağımlılığı</h1>
+    <p><b>Teknoloji bağımlılığı,</b> bilgisayarlar, akıllı telefonlar, internet, video oyunları ve diğer dijital cihazların aşırı kullanımı sonucunda kişinin hayatının diğer alanlarından kopması ve bu teknolojik araçlara takıntılı bir şekilde zaman harcamasıdır. </p>
+
+    <img src= "Telefona bakan insanlar.png" width="860" alt="Telefona Bakan İnsanlar">
+
+    <h2>Teknoloji Bağımlılığının Zararları:</h2>
+    <li>Uyku düzeni bozukluğu</li>
+    <li>Sosyal izolasyon</li>
+    <li>Dikkat eksikliği</li>
+    <li>Stres ve kaygı</li>
+    <li>Fiziksel sağlık sorunları (örneğin, kas-iskelet problemleri)</li>
+    <li>Ruhsal sağlık sorunları (örneğin, depresyon)</li>
+
+    <img src="Telefonun Üzerinde Yatan Kadın.png" width="860" alt="Telefonun Üzerinde Uyuyan Kadın">
+
+    <h2>İşte size teknoloji bağımlılığını yenmek için bazı etkili tavsiyeler:</h2>
+    
+    <ol><li><b>Teknoloji Kullanımını Takip Edin:</b></li>
+        <p>Ne kadar zamanınızı teknolojiye ayırdığınızın farkında olmak önemlidir. Telefonunuzda veya bilgisayarınızda yerleşik olan “Ekran Süresi” gibi araçları kullanarak günlük ve haftalık teknoloji kullanımınızı takip edebilirsiniz.</p>
+
+        <li><b>Hedefler Belirleyin:</b></li>
+        <p>Teknoloji kullanımınızı ne kadar azaltmak istediğinize karar verin ve bu hedefe ulaşmak için somut adımlar belirleyin. Her gün telefonunuzu belirli saatlerde kapatmak, sosyal medya platformlarında daha az zaman geçirmek veya belirli uygulamaları sınırlamak gibi hedefler koyabilirsiniz.</p>
+
+        <li><b>Tetikleyicilerden Kaçının:</b></li>
+        <p>Sizi teknolojiye yönlendiren şeyleri belirleyin ve bu tetikleyicilerden uzak durmaya çalışın. Telefonunuzu yatak odanızdan uzak tutmak, bildirimleri kapatmak veya sosyal medya platformlarını bilgisayarınızdan silmek gibi önlemler alabilirsiniz.</p>
+    
+        <li><b>Alternatif Aktiviteler Bulun:</b></li>
+        <p>Teknolojiden uzak zaman geçirmek için keyif aldığınız alternatif aktiviteler bulun. Kitap okumak, egzersiz yapmak, aile ve arkadaşlarınızla vakit geçirmek, yeni bir hobi edinmek gibi aktiviteler, teknolojiye olan bağımlılığınızı azaltmanıza yardımcı olabilir.</p>
+  
+        <li><b>Kendinize Ödül Verin:</b></li>
+        <p>Hedeflerinize ulaştığınızda kendinizi ödüllendirmeyi unutmayın. Bu, motivasyonunuzu yüksek tutmanıza ve teknoloji bağımlılığından kurtulma sürecini daha keyifli hale getirecektir.</p>
+
+        <li><b>Destek Alın:</b></li>
+        <p>Teknolojiden kurtulmak tek başınıza zor olabilir. Ailenizden ve arkadaşlarınızdan destek alabilir veya bir terapist veya danışmandan yardım alabilirsiniz.</p>
+
+    </ol>
+
+    <h2>Daha fazla Bilgi İçin</h2>
+    <a href="">https://www.memorial.com.tr/saglik-rehberi/teknoloji-bagimliligi-nedir-nedenleri-ve-tedavisi</a>
+
+
+    <img src="Bilgisayara baka insanlar.png"  width="860" alt="Bilgisayara Zincirlenmiş İki Kişi">
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/R-yTkc0dduk?si=zOEX8LxDf-n6ugBT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe src="https://www.meteoblue.com/tr/hava/widget/daily/ip_romanya_675514?geoloc=fixed&days=7&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=monochrome&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windspeed=1&windgust=0&windgust=1&winddirection=0&winddirection=1&uv=0&uv=1&humidity=0&humidity=1&precipitation=0&precipitation=1&precipitationprobability=0&precipitationprobability=1&spot=0&spot=1&pressure=0&pressure=1&layout=light"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 378px; height: 446px"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/tr/hava/hafta/ip_romanya_675514?utm_source=daily_widget&utm_medium=linkus&utm_content=daily&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener">meteoblue</a></div>
+
+    
+   
+
+</body>
+</html>
