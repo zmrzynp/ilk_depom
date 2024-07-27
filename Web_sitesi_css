@@ -1,0 +1,96 @@
+
+
+    
+/* @font-face {
+     font-family: Mongolian Baiti Regular ;
+     src: url(Mongolian\ Baiti\ Regular.ttf)  format(truetype);
+        
+    }
+     */
+
+
+@font-face {
+    font-family: Lemon Shake Shake;
+    src: url(Lemon\ Shake\ Shake.ttf) format(truetype);
+}
+body{
+
+    font-family: "Lemon Shake Shake"; 
+   /* font-family: "Mongolian Baiti Regular"; */
+    background-color: rgba(224, 196, 165, 0.966);
+    color: rgb(52, 29, 105);
+    
+    h1 {
+        color: rgb(141, 61, 134);
+        text-align: center;
+    }
+
+    li{
+        font-size: 20px;
+
+    }
+
+    p{
+        font-size: 20;
+    }
+
+    
+
+}
+
+a{
+
+        color: rgb(127, 90, 161);
+        background-color: bisque;
+        font-size: 20px;
+        padding: 5px;
+        margin: auto;
+        text-decoration: none;
+        border-radius: 20px;
+
+
+}
+
+a:hover{
+
+    animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+
+    0%{
+        background-color: bisque;
+    }
+
+    10%{ 
+        background-color: rgb(226, 183, 131);
+
+    }
+
+    20%{
+        background-color: rgb(211, 145, 65);
+    }
+
+    40%{
+        background-color: rgb(230, 137, 25);
+    }
+
+    60%{
+        background-color: rgb(255, 140, 0);
+    }
+
+    80%{
+        background-color: rgba(230, 138, 25, 0.664);
+    }
+
+    90%{
+        background-color: rgba(230, 138, 25, 0.274);
+    }
+
+    100%{
+        background-color: rgba(230, 138, 25, 0);
+    }
+}
+
+h1:hover { animation: color-change 3s infinite;
+border-radius: 15%; }
